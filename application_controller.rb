@@ -10,4 +10,14 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
   
+  post "/result" do
+    user_feeling = params[:feelings]
+    @user_choice = get_gif(user_feeling)
+    erb :result
+  end
+  
+  post "/index" do
+  erb :index
+  end
+  
 end
