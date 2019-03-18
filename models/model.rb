@@ -1,5 +1,6 @@
 require 'net/http'
 require 'json'
+require 'pp'
 
 def get_gif(mood)
     url = "http://api.giphy.com/v1/gifs/random?tag=" + @user_feeling + "&api_key=rzuGbBtNPd8X0vnCyTPxrqRnFsnL25eA&limit=1"
@@ -9,4 +10,11 @@ def get_gif(mood)
     result["data"]["embed_url"]
 end
 
+# def get_antonym(mood)
+    # url = "https://www.dictionaryapi.com/api/v3/references/thesaurus/json/happy?key=0c1c42b3-ad1e-46ba-ace6-6e297eb7df07"
+    # uri = URI(url)
+    # response = Net::HTTP.get(uri)
+    # result = JSON.parse(response)
+    # puts result
+# end
 # puts get_gif("happy")
