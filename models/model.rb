@@ -17,4 +17,5 @@ end
     # result = JSON.parse(response)
     # puts result
 # end
+#IGNORE THIS ^ I WAS TRYING TO USE A SECOND API TO GET AN ANTONYM OF THE USERS INPUT
 # puts get_gif("happy")
