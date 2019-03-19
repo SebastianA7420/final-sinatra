@@ -1,6 +1,6 @@
 require 'net/http'
 require 'json'
-# require 'paralleldots'
+require 'paralleldots'
 require 'pp'
 
 def get_gif(mood)
@@ -11,10 +11,9 @@ def get_gif(mood)
     result["data"]["embed_url"]
 end
 
-# text= "The movie made me sad"
-# response = emotion(text, lang_code= "en")
-# result = (response)
-# puts response["emotion"]["emotion"]
+@text= @user_feeling
+response=emotion(@text, lang_code= "en")
+puts response["emotion"]["emotion"]
 
 
 # puts get_gif("happy")
