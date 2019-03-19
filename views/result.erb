@@ -10,18 +10,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- custom JS -->
     <script src="js/script.js"></script>
   </head>
   <body>
-    
+    <style>
+    body {
+      height: 800px;
+      background-color: #6E60FF;
+      background-image: linear-gradient(#F260FF, #6E60FF);
+    }
+    </style>
     <div class="container-fluid">
-    <iframe src=<%= @user_choice %> width="480" height="313" frameBorder="0" class="giphy-embed"></iframe>
+      <br>
+      <br>
+    <center><iframe src=<%= @user_choice %> width="480" height="313" frameBorder="0" class="giphy-embed"></iframe></center>
     <form method="post" action="/index">
-    <input type="submit" value="Try Again">
+    <center><input class="button" type="submit" value="Try Another"></center>
     </form>
     </div>
     
