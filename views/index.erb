@@ -4,28 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Giph for Feelings</title>
+    
     <!-- bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400i|Shrikhand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <!-- custom JS -->
     <script src="js/script.js"></script>
   </head>
+
   <body>
-    
+    <style>
+    body {
+      height: 800px;
+      background-color: #6E60FF;
+      background-image: linear-gradient(#6E60FF, #F260FF);
+    }
+    h1{font-family: 'Shrikhand', cursive;}
+    h1{text-align: center;}
+    h3{font-family: 'Roboto', sans-serif;}
+    h3{text-align: center;}
+    </style>
     <div class="container-fluid">
-      <h1>Giph for Feelings</h1>
+      <h1>GIF Feelings Generator</h1>
       <h3>Tell us how you feel. We'll provide a GIF!</h3>
-      <form method="post" action="/result">
+      <center><form method="post" action="/result">
         <input type="text" name="feelings">
-        <input type="submit" value="Give me a GIF!">
-      </form>
-    </div>
+        <input class="button" type="submit" value="Give me a GIF!">
+      </form></center>
+      </div>
     
   </body>
 </html>
