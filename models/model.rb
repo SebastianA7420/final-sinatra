@@ -11,9 +11,9 @@ def get_gif(mood)
     result["data"]["embed_url"]
 end
 
-@text= @user_feeling
-response=emotion(@text, lang_code= "en")
-puts response["emotion"]["emotion"]
+# @text= "I failed the test"
+# response=emotion(@text, lang_code= "en")
+# @user_feeling = response["emotion"]["emotion"]
 
 
 # puts get_gif("happy")

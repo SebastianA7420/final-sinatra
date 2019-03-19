@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
   
   post "/result" do
     @user_feeling = params[:feelings]
-    @user_choice = get_gif(@user_feeling)
+    @user_choice = get_gif(@user_gif)
     erb :result
   end
   
