@@ -1,8 +1,9 @@
 source "https://rubygems.org"
 
+ruby "2.3.1"
 gem 'pry'
 gem 'sinatra'
 gem 'shotgun'
 gem 'dotenv'
 gem 'paralleldots'
-gem 'rest-client', '~> 1.8'
+gem 'rest-client'
