@@ -44,7 +44,7 @@ DEPENDENCIES
   dotenv
   paralleldots
   pry
-  rest-client
+  rest-client (~> 1.8)
   shotgun
   sinatra
 
