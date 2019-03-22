@@ -25,6 +25,7 @@
     </style>
     <div class="container-fluid">
       <br>
+      <center><h3>You Are Feeling <b><%= get_mood %></b>. Here is a GIF for that:</h3></center>
       <br>
     <center><iframe src=<%= @user_choice %> width="480" height="313" frameBorder="0" class="giphy-embed"></iframe></center>
     <form method="post" action="/index">
